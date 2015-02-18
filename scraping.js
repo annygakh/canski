@@ -1,6 +1,10 @@
 var request = require('request'),
-	cheerio = require('cheerio'),
-	schedule = require('node-schedule');
+	cheerio = require('cheerio');
+
+var hours = 4, the_interval = hours * 60 * 1000;
+
+
+setInterval(function() {
 
 var url_wb 	= "http://www.whistlerblackcomb.com/local/xml/tom.xml";
 var url_seymour = "http://www.mountseymour.com/";
@@ -108,10 +112,9 @@ request(url_cypress, function(err, resp, body){
 	try_to_exit();
 });
 
+} , the_interval);
+
 function try_to_exit(){
-	if (num_finished === 4)
-		process.exit(0);
-
+	console.log("trying to exit, ignore");
 }
-
 
