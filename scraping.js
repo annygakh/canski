@@ -1,5 +1,7 @@
 var request = require('request'),
-	cheerio = require('cheerio');
+	cheerio = require('cheerio'),
+	schedule = require('node-schedule');
+
 var url_wb 	= "http://www.whistlerblackcomb.com/local/xml/tom.xml";
 var url_seymour = "http://www.mountseymour.com/";
 var url_cypress = "http://cypressmountain.com/";
@@ -15,6 +17,9 @@ var grouse_ref = can_ski_ref.child("grouse");
 
 
 var num_finished=0;
+
+var whistler_request = 
+
 request(url_wb, function(err, resp, body){
 
 	if (!err && resp.statusCode == 200){
@@ -45,6 +50,7 @@ request(url_wb, function(err, resp, body){
 	try_to_exit();
 });
 
+var seymour_request = 
 request(url_seymour, function(err, resp, body){
 	if (!err && resp.statusCode == 200){
 		var obj = cheerio.load(body);
@@ -63,6 +69,7 @@ request(url_seymour, function(err, resp, body){
 	try_to_exit();
 });
 
+var grouse_request = 
 request(url_grouse, function(err, resp, body){
 	if (!err && resp.statusCode == 200){
 		var obj = cheerio.load(body);
@@ -80,6 +87,7 @@ request(url_grouse, function(err, resp, body){
 	try_to_exit();
 });
 
+var cypress_request = 
 request(url_cypress, function(err, resp, body){
 	if (!err && resp.statusCode == 200){
 		var obj = cheerio.load(body);
@@ -102,7 +110,8 @@ request(url_cypress, function(err, resp, body){
 
 function try_to_exit(){
 	if (num_finished === 4)
-		process.exit();
+		process.exit(0);
+
 }
 
 
