@@ -1,14 +1,14 @@
 package me.annygakh.canski;
 
-import android.support.v4.app.DialogFragment;
 import android.os.Bundle;
+import android.support.v4.app.DialogFragment;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
+import com.beardedhen.androidbootstrap.BootstrapButton;
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
@@ -18,7 +18,7 @@ import com.firebase.client.ValueEventListener;
 public class MainActivity extends ActionBarActivity {
 
     private TextView mWhistlerStatus, mBlackStatus, mGrouseStatus, mCypressStatus, mSeymourStatus;
-    private Button mRefreshButton, mAboutButton, mReport;
+    private BootstrapButton mAboutButton, mReport;
 
 
     public final static String ERROR = "ERROR",
@@ -66,7 +66,7 @@ public class MainActivity extends ActionBarActivity {
 //        });
 
 
-    mAboutButton = (Button) findViewById(R.id.about_button);
+    mAboutButton = (BootstrapButton) findViewById(R.id.about_button);
         getSupportFragmentManager();
 
     mAboutButton.setOnClickListener(new View.OnClickListener() {

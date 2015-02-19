@@ -5,6 +5,9 @@
     <dimen name="margin">17dp</dimen>
     <dimen name="padding">15dp</dimen>
     <dimen name="margin_bottom_buttons">18dp</dimen>
-    <dimen name="bottom_buttons_padding">10dp</dimen>
+    <dimen name="bottom_buttons_padding">5dp</dimen>
     <dimen name="bottom_buttons_margin">0dp</dimen>
+
+    <dimen name="title_font_size">20sp</dimen>
+    <dimen name="text_size">14sp</dimen>
 </resources>
