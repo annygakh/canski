@@ -4,7 +4,7 @@ var request = require('request'),
 var hours = 4, the_interval = hours * 60 * 1000;
 
 
-setInterval(function() {
+// setInterval(function() {
 
 var url_wb 	= "http://www.whistlerblackcomb.com/local/xml/tom.xml";
 var url_seymour = "http://www.mountseymour.com/";
@@ -83,7 +83,7 @@ request(url_grouse, function(err, resp, body){
 			grouse_ref.set("0");
 			console.log("grouse is on standby");
 		} else {
-			grouse_ref.set(">1");
+			grouse_ref.set("OPEN");
 			console.log("grouse is open, latest warnings: " + warn);
 		}
 	}
@@ -101,7 +101,7 @@ request(url_cypress, function(err, resp, body){
 			cypress_ref.set("0")
 			console.log("cypress is on standby");
 		} else {
-			cypress_ref.set(">1");
+			cypress_ref.set("OPEN");
 			console.log("cypress is open, latest warnings: " + warn);
 		}
 
@@ -112,9 +112,11 @@ request(url_cypress, function(err, resp, body){
 	try_to_exit();
 });
 
-} , the_interval);
+// } , the_interval);
 
 function try_to_exit(){
-	console.log("trying to exit, ignore");
+	if (num_finished === 4)
+		process.exit();
+	// console.log("trying to exit, ignore");
 }
 

@@ -2,7 +2,25 @@
 <resources>
 
     <string name="app_name">Canski</string>
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title">Vancouver Mountains</string>
+
+    <string name="refresh">Refresh</string>
+    <string name="report_bug">Report a bug</string>
+    <string name="about">About</string>
+
+    <string name="about_dialog">This information in this app is
+        automatically updated upon any changes in conditions when you have internet connection.
+        That\'s why there is no refresh button :) </string>
+    <string name="ok_about_dialog">Ok</string>
+
+
+    <string name="grouse_name">Grouse</string>
+    <string name="whistler_name">Whistler</string>
+    <string name="blackcomb_name">Blackcomb</string>
+    <string name="cypress_name">Cypress</string>
+    <string name="seymour_name">Seymour</string>
+
+    <string name="status"> </string>
 
 </resources>

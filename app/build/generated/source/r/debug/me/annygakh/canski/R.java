@@ -1240,12 +1240,17 @@ containing a value of this type.
         public static final int abc_text_size_title_material_toolbar=0x7f070024;
         public static final int activity_horizontal_margin=0x7f070025;
         public static final int activity_vertical_margin=0x7f070026;
-        public static final int dialog_fixed_height_major=0x7f070027;
-        public static final int dialog_fixed_height_minor=0x7f070028;
-        public static final int dialog_fixed_width_major=0x7f070029;
-        public static final int dialog_fixed_width_minor=0x7f07002a;
-        public static final int disabled_alpha_material_dark=0x7f07002b;
-        public static final int disabled_alpha_material_light=0x7f07002c;
+        public static final int bottom_buttons_margin=0x7f070027;
+        public static final int bottom_buttons_padding=0x7f070028;
+        public static final int dialog_fixed_height_major=0x7f070029;
+        public static final int dialog_fixed_height_minor=0x7f07002a;
+        public static final int dialog_fixed_width_major=0x7f07002b;
+        public static final int dialog_fixed_width_minor=0x7f07002c;
+        public static final int disabled_alpha_material_dark=0x7f07002d;
+        public static final int disabled_alpha_material_light=0x7f07002e;
+        public static final int margin=0x7f07002f;
+        public static final int margin_bottom_buttons=0x7f070030;
+        public static final int padding=0x7f070031;
     }
     public static final class drawable {
         public static final int abc_ab_share_pack_holo_dark=0x7f020000;
@@ -1302,6 +1307,7 @@ containing a value of this type.
         public static final int ic_launcher=0x7f020033;
     }
     public static final class id {
+        public static final int about_button=0x7f080049;
         public static final int action_bar=0x7f080031;
         public static final int action_bar_activity_content=0x7f080000;
         public static final int action_bar_container=0x7f080030;
@@ -1315,12 +1321,16 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f08002e;
         public static final int action_mode_bar_stub=0x7f08002d;
         public static final int action_mode_close_button=0x7f080020;
-        public static final int action_settings=0x7f08003f;
+        public static final int action_settings=0x7f08004b;
         public static final int activity_chooser_view_content=0x7f080021;
         public static final int always=0x7f080016;
         public static final int beginning=0x7f080013;
+        public static final int blackcomb_status=0x7f080045;
+        public static final int blackcomb_text=0x7f080040;
         public static final int checkbox=0x7f080029;
         public static final int collapseActionView=0x7f080017;
+        public static final int cypress_status=0x7f080046;
+        public static final int cypress_text=0x7f080041;
         public static final int decor_content_parent=0x7f08002f;
         public static final int default_activity_button=0x7f080024;
         public static final int dialog=0x7f08001b;
@@ -1330,6 +1340,8 @@ containing a value of this type.
         public static final int end=0x7f080014;
         public static final int expand_activities_button=0x7f080022;
         public static final int expanded_menu=0x7f080028;
+        public static final int grouse_status=0x7f080047;
+        public static final int grouse_text=0x7f080042;
         public static final int home=0x7f080004;
         public static final int homeAsUp=0x7f08000d;
         public static final int icon=0x7f080026;
@@ -1344,6 +1356,7 @@ containing a value of this type.
         public static final int progress_circular=0x7f080005;
         public static final int progress_horizontal=0x7f080006;
         public static final int radio=0x7f08002b;
+        public static final int report_bug_button=0x7f08004a;
         public static final int search_badge=0x7f080035;
         public static final int search_bar=0x7f080034;
         public static final int search_button=0x7f080036;
@@ -1354,6 +1367,8 @@ containing a value of this type.
         public static final int search_plate=0x7f080039;
         public static final int search_src_text=0x7f08003a;
         public static final int search_voice_btn=0x7f08003e;
+        public static final int seymour_status=0x7f080048;
+        public static final int seymour_text=0x7f080043;
         public static final int shortcut=0x7f08002a;
         public static final int showCustom=0x7f08000f;
         public static final int showHome=0x7f080010;
@@ -1364,6 +1379,8 @@ containing a value of this type.
         public static final int title=0x7f080027;
         public static final int up=0x7f080008;
         public static final int useLogo=0x7f080012;
+        public static final int whistler_status=0x7f080044;
+        public static final int whistler_text=0x7f08003f;
         public static final int withText=0x7f08001a;
         public static final int wrap_content=0x7f08001d;
     }
@@ -1417,9 +1434,20 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with=0x7f0a000d;
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000e;
         public static final int abc_toolbar_collapse_description=0x7f0a000f;
-        public static final int action_settings=0x7f0a0010;
-        public static final int app_name=0x7f0a0011;
-        public static final int hello_world=0x7f0a0012;
+        public static final int about=0x7f0a0010;
+        public static final int about_dialog=0x7f0a0011;
+        public static final int action_settings=0x7f0a0012;
+        public static final int app_name=0x7f0a0013;
+        public static final int blackcomb_name=0x7f0a0014;
+        public static final int cypress_name=0x7f0a0015;
+        public static final int grouse_name=0x7f0a0016;
+        public static final int ok_about_dialog=0x7f0a0017;
+        public static final int refresh=0x7f0a0018;
+        public static final int report_bug=0x7f0a0019;
+        public static final int seymour_name=0x7f0a001a;
+        public static final int status=0x7f0a001b;
+        public static final int title=0x7f0a001c;
+        public static final int whistler_name=0x7f0a001d;
     }
     public static final class style {
         /**  Customize your theme here. 

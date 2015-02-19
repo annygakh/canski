@@ -123,8 +123,10 @@
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
     <!-- From: file:/Users/annygakhokidze/AndroidStudioProjects/Canski/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+    <dimen name="bottom_buttons_margin">0dp</dimen>
+    <dimen name="bottom_buttons_padding">10dp</dimen>
     <!-- From: file:/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
@@ -133,6 +135,13 @@
     <item name="dialog_fixed_width_minor" type="dimen">320dp</item>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
+    <!-- From: file:/Users/annygakhokidze/AndroidStudioProjects/Canski/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="margin">17dp</dimen>
+    <dimen name="margin_bottom_buttons">18dp</dimen>
+    <dimen name="padding">15dp</dimen>
+    <!-- From: file:/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <eat-comment/>
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_bar_spinner" type="id"/>
     <item name="action_menu_divider" type="id"/>
@@ -161,9 +170,22 @@
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <!-- From: file:/Users/annygakhokidze/AndroidStudioProjects/Canski/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="about">About</string>
+    <string name="about_dialog">This information in this app is
+        automatically updated upon any changes in conditions when you have internet connection.
+        That\'s why there is no refresh button :) </string>
     <string name="action_settings">Settings</string>
     <string name="app_name">Canski</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="blackcomb_name">Blackcomb</string>
+    <string name="cypress_name">Cypress</string>
+    <string name="grouse_name">Grouse</string>
+    <string name="ok_about_dialog">Ok</string>
+    <string name="refresh">Refresh</string>
+    <string name="report_bug">Report a bug</string>
+    <string name="seymour_name">Seymour</string>
+    <string name="status"> </string>
+    <string name="title">Vancouver Mountains</string>
+    <string name="whistler_name">Whistler</string>
     <!-- From: file:/Users/annygakhokidze/AndroidStudioProjects/Canski/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
