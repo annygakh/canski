@@ -117,6 +117,7 @@ request(url_cypress, function(err, resp, body){
 function try_to_exit(){
 	if (num_finished === 4)
 		process.exit();
+		// Firebase.goOffline();
 	// console.log("trying to exit, ignore");
 }
 
