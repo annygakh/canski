@@ -1,3 +1,5 @@
+#!/bin/env node
+
 var request = require('request'),
 	cheerio = require('cheerio');
 
@@ -78,8 +80,12 @@ request(url_grouse, function(err, resp, body){
 	if (!err && resp.statusCode == 200){
 		var obj = cheerio.load(body);
 		var warn = obj('span', '#site_wide_alert').text();
-
-		if ((warn.indexOf("stand") > -1) || (warn.indexOf("STAND"))){
+		if (warn.indexOf('open')){
+			grouse_ref.set('OPEN');
+			console.log("grouse is open, latest warnings: " + warn);
+			
+		}
+		else if ((warn.indexOf("stand") > -1) || (warn.indexOf("STAND"))){
 			grouse_ref.set("0");
 			console.log("grouse is on standby");
 		} else {
@@ -97,7 +103,11 @@ request(url_cypress, function(err, resp, body){
 		var obj = cheerio.load(body);
 		var warn = obj('#block-views-Conditions-block_1 > div > div > div > div.view-content > div > div.views-field-field-alpine-conditions-desc-value > div > p:nth-child(1) > strong').text();
 		
-		if ((warn.indexOf("stand") > -1) || (warn.indexOf("STAND"))){
+		if (warn.indexOf('open') > -1 ) {
+			cypress_ref.set('OPEN');
+			console.log("cypress is open, latest warnings: " + warn);
+		}
+		else if ((warn.indexOf("stand") > -1) || (warn.indexOf("STAND"))){
 			cypress_ref.set("0")
 			console.log("cypress is on standby");
 		} else {
