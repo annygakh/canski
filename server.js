@@ -3,23 +3,25 @@
 var request = require('request'),
 	cheerio = require('cheerio');
 
-var hours = 4, the_interval = hours * 60 * 1000;
-
-
-// setInterval(function() {
 
 var url_wb 	= "http://www.whistlerblackcomb.com/local/xml/tom.xml";
 var url_seymour = "http://www.mountseymour.com/";
-var url_cypress = "http://cypressmountain.com/";
+var url_cypress = "http://cypressmountain.com/new-conditions.asp";
 var url_grouse = "https://www.grousemountain.com/";
 
 var Firebase = require('firebase');
+
 var can_ski_ref = new Firebase("https://canski.firebaseio.com/");
+
 var whistler_ref = can_ski_ref.child("whistler");
 var blackcomb_ref = can_ski_ref.child("blackcomb");
 var seymour_ref = can_ski_ref.child("seymour");
 var cypress_ref = can_ski_ref.child("cypress");
 var grouse_ref = can_ski_ref.child("grouse");
+
+
+var SEYMOUR_CSS_PATH = '.currentConditionsRuns';
+var CYPRESS_CSS_PATH = '#node-230259 > div > div > div.fieldgroup.group-alpine-operation-hours > div > div > div > div';
 
 
 var num_finished=0;
@@ -60,10 +62,8 @@ var seymour_request =
 request(url_seymour, function(err, resp, body){
 	if (!err && resp.statusCode == 200){
 		var obj = cheerio.load(body);
-		var runs_open_s = obj('.currentConditionsRuns').text();
+		var runs_open_s = obj(SEYMOUR_CSS_PATH).text();
 		console.log("runs open at seymour: " + runs_open_s);
-		// semour_ref.set("")
-
 		if (runs_open_s >= 0)
 			seymour_ref.set(runs_open_s);
 		else
@@ -80,17 +80,13 @@ request(url_grouse, function(err, resp, body){
 	if (!err && resp.statusCode == 200){
 		var obj = cheerio.load(body);
 		var warn = obj('span', '#site_wide_alert').text();
-		if (warn.indexOf('open')){
+		if ((warn.indexOf("stand") > -1) || (warn.indexOf("STAND")) > -1 || (warn.indexOf("Stand")) > -1 ){
+			grouse_ref.set("0");
+			console.log("grouse is on standby");
+		} else if (warn.indexOf('open') > -1 || warn.indexOf('OPEN') > -1){
 			grouse_ref.set('OPEN');
 			console.log("grouse is open, latest warnings: " + warn);
 			
-		}
-		else if ((warn.indexOf("stand") > -1) || (warn.indexOf("STAND"))){
-			grouse_ref.set("0");
-			console.log("grouse is on standby");
-		} else {
-			grouse_ref.set("OPEN");
-			console.log("grouse is open, latest warnings: " + warn);
 		}
 	}
 	num_finished++;
@@ -101,17 +97,14 @@ var cypress_request =
 request(url_cypress, function(err, resp, body){
 	if (!err && resp.statusCode == 200){
 		var obj = cheerio.load(body);
-		var warn = obj('#block-views-Conditions-block_1 > div > div > div > div.view-content > div > div.views-field-field-alpine-conditions-desc-value > div > p:nth-child(1) > strong').text();
+		var warn = obj(CYPRESS_CSS_PATH).text();
+		// console.log("warnings from cypress: " + warn);
 		
-		if (warn.indexOf('open') > -1 ) {
-			cypress_ref.set('OPEN');
-			console.log("cypress is open, latest warnings: " + warn);
-		}
-		else if ((warn.indexOf("stand") > -1) || (warn.indexOf("STAND"))){
+		if (warn.indexOf("stand") > -1 || warn.indexOf("STAND") > -1  || warn.indexOf("Stand")  > -1 ){
 			cypress_ref.set("0")
 			console.log("cypress is on standby");
-		} else {
-			cypress_ref.set("OPEN");
+		} else if (warn.indexOf('open') > -1 ) {
+			cypress_ref.set('OPEN');
 			console.log("cypress is open, latest warnings: " + warn);
 		}
 
@@ -122,12 +115,9 @@ request(url_cypress, function(err, resp, body){
 	try_to_exit();
 });
 
-// } , the_interval);
 
 function try_to_exit(){
 	if (num_finished === 4)
 		process.exit();
-		// Firebase.goOffline();
-	// console.log("trying to exit, ignore");
 }
 
