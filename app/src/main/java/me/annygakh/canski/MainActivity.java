@@ -1,5 +1,7 @@
 package me.annygakh.canski;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.ActionBarActivity;
@@ -18,7 +20,10 @@ import com.firebase.client.ValueEventListener;
 public class MainActivity extends ActionBarActivity {
 
     private TextView mWhistlerStatus, mBlackStatus, mGrouseStatus, mCypressStatus, mSeymourStatus;
-    private BootstrapButton mAboutButton, mReport;
+    private BootstrapButton mAboutButton, mReportButton;
+
+    private final static String TO_EMAIL = "annygakhokidze@gmail.com",
+                                EMAIL_SUBJECT = "CANSKI APP";
 
 
     public final static String ERROR = "ERROR",
@@ -27,17 +32,6 @@ public class MainActivity extends ActionBarActivity {
 
     Firebase myFirebaseRef;
 
-    // no need for manual update, because initially it updates by itself.
-//    public void manual_update(){
-//
-//        mGrouseStatus.setText(myFirebaseRef.child("grouse").toString());
-//        mWhistlerStatus.setText(myFirebaseRef.child("whistler").getKey());
-//        mBlackStatus.setText(myFirebaseRef.child("blackcomb").getKey());
-//        mCypressStatus.setText(myFirebaseRef.child("cypress").getKey());
-//        mSeymourStatus.setText(myFirebaseRef.child("seymour").getKey()
-//        );
-//
-//    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,43 +41,62 @@ public class MainActivity extends ActionBarActivity {
 
         myFirebaseRef = new Firebase("https://canski.firebaseio.com/");
 
+        setUpStatusBoxes();
+
+        setUpAboutButton();
+
+        setUpReportButton();
+
+        addValueEventListeners();
+
+
+
+
+
+    }
+
+    private void setUpReportButton() {
+        mReportButton = (BootstrapButton) findViewById(R.id.report_bug_button);
+        mReportButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendReport();
+            }
+        });
+    }
+    public void sendReport(){
+        String[] TO_ADDRESS = {TO_EMAIL};
+        Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+        emailIntent.setData(Uri.parse("mailto:"));
+        emailIntent.putExtra(Intent.EXTRA_EMAIL, TO_ADDRESS);
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, EMAIL_SUBJECT);
+
+        if (emailIntent.resolveActivity(getPackageManager()) != null) {
+            startActivity(emailIntent);
+        }
+
+
+    }
+    private void setUpAboutButton(){
+        mAboutButton = (BootstrapButton) findViewById(R.id.about_button);
+       // getSupportFragmentManager();
+
+        mAboutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DialogFragment newFragment = new AboutDialogFragment();
+                newFragment.show(getSupportFragmentManager(), "about_dialog");
+            }
+        });
+
+    }
+
+    private void setUpStatusBoxes(){
         mWhistlerStatus = (TextView) findViewById(R.id.whistler_status);
         mBlackStatus = (TextView) findViewById(R.id.blackcomb_status);
         mGrouseStatus = (TextView) findViewById(R.id.grouse_status);
         mCypressStatus = (TextView) findViewById(R.id.cypress_status);
         mSeymourStatus = (TextView) findViewById(R.id.seymour_status);
-
-
-//        manual_update();
-
-//
-//        mRefreshButton = (Button) findViewById(R.id.refresh_button);
-//        mRefreshButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-////                manual_update();
-//            }
-//        });
-
-
-    mAboutButton = (BootstrapButton) findViewById(R.id.about_button);
-        getSupportFragmentManager();
-
-    mAboutButton.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            DialogFragment newFragment = new AboutDialogFragment();
-            newFragment.show(getSupportFragmentManager(), "about_dialog");
-        }
-    });
-
-
-    addValueEventListeners();
-
-
-
-
-
     }
 
     private void addValueEventListeners(){

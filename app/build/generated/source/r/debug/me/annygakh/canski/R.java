@@ -1557,7 +1557,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f08002e;
         public static final int action_mode_bar_stub=0x7f08002d;
         public static final int action_mode_close_button=0x7f080020;
-        public static final int action_settings=0x7f080058;
+        public static final int action_settings=0x7f080052;
         public static final int activity_chooser_view_content=0x7f080021;
         public static final int always=0x7f080016;
         public static final int beginning=0x7f080013;
@@ -1565,13 +1565,13 @@ containing a value of this type.
         public static final int blackcomb_text=0x7f080040;
         public static final int checkbox=0x7f080029;
         public static final int collapseActionView=0x7f080017;
-        public static final int container=0x7f080050;
+        public static final int container=0x7f08004f;
         public static final int cypress_status=0x7f080046;
         public static final int cypress_text=0x7f080041;
         public static final int decor_content_parent=0x7f08002f;
         public static final int default_activity_button=0x7f080024;
         public static final int dialog=0x7f08001b;
-        public static final int dimensionsLabel=0x7f080052;
+        public static final int dimensionsLabel=0x7f080051;
         public static final int disableHome=0x7f08000c;
         public static final int dropdown=0x7f08001c;
         public static final int edit_query=0x7f080033;
@@ -1586,21 +1586,16 @@ containing a value of this type.
         public static final int ifRoom=0x7f080018;
         public static final int image=0x7f080023;
         public static final int layout=0x7f08004b;
-        public static final int lblColA=0x7f080056;
-        public static final int lblColB=0x7f080057;
         public static final int lblLeft=0x7f08004c;
         public static final int lblMiddle=0x7f08004d;
         public static final int lblRight=0x7f08004e;
-        public static final int lblSubTitle=0x7f080055;
-        public static final int lblText=0x7f080053;
-        public static final int lblTitle=0x7f080054;
         public static final int listMode=0x7f080009;
         public static final int list_item=0x7f080025;
         public static final int middle=0x7f080015;
         public static final int never=0x7f080019;
         public static final int none=0x7f08000e;
         public static final int normal=0x7f08000a;
-        public static final int placeholder=0x7f080051;
+        public static final int placeholder=0x7f080050;
         public static final int progress_circular=0x7f080005;
         public static final int progress_horizontal=0x7f080006;
         public static final int radio=0x7f08002b;
@@ -1625,7 +1620,6 @@ containing a value of this type.
         public static final int submit_area=0x7f08003c;
         public static final int tabMode=0x7f08000b;
         public static final int title=0x7f080027;
-        public static final int txtText=0x7f08004f;
         public static final int up=0x7f080008;
         public static final int useLogo=0x7f080012;
         public static final int whistler_status=0x7f080044;
@@ -1662,14 +1656,10 @@ containing a value of this type.
         public static final int abc_simple_dropdown_hint=0x7f030016;
         public static final int activity_main=0x7f030017;
         public static final int bootstrap_button=0x7f030018;
-        public static final int bootstrap_edit_text=0x7f030019;
-        public static final int bootstrap_thumbnail=0x7f03001a;
-        public static final int bootstrap_thumbnail_circle=0x7f03001b;
-        public static final int font_awesome_text=0x7f03001c;
-        public static final int row_title=0x7f03001d;
-        public static final int row_title_and_subtitle=0x7f03001e;
-        public static final int row_two_columns=0x7f03001f;
-        public static final int support_simple_spinner_dropdown_item=0x7f030020;
+        public static final int bootstrap_thumbnail=0x7f030019;
+        public static final int bootstrap_thumbnail_circle=0x7f03001a;
+        public static final int placeholder=0x7f03001b;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001c;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
@@ -3154,29 +3144,13 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #FontAwesomeText_android_textColor android:textColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #FontAwesomeText_android_textSize android:textSize}</code></td><td></td></tr>
            <tr><td><code>{@link #FontAwesomeText_fa_icon me.annygakh.canski:fa_icon}</code></td><td></td></tr>
            </table>
-           @see #FontAwesomeText_android_textColor
-           @see #FontAwesomeText_android_textSize
            @see #FontAwesomeText_fa_icon
          */
         public static final int[] FontAwesomeText = {
-            0x01010095, 0x01010098, 0x7f010039
+            0x7f010039
         };
-        /**
-          <p>This symbol is the offset where the {@link android.R.attr#textColor}
-          attribute's value can be found in the {@link #FontAwesomeText} array.
-          @attr name android:textColor
-        */
-        public static final int FontAwesomeText_android_textColor = 1;
-        /**
-          <p>This symbol is the offset where the {@link android.R.attr#textSize}
-          attribute's value can be found in the {@link #FontAwesomeText} array.
-          @attr name android:textSize
-        */
-        public static final int FontAwesomeText_android_textSize = 0;
         /**
           <p>This symbol is the offset where the {@link me.annygakh.canski.R.attr#fa_icon}
           attribute's value can be found in the {@link #FontAwesomeText} array.
@@ -3190,7 +3164,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name me.annygakh.canski:fa_icon
         */
-        public static final int FontAwesomeText_fa_icon = 2;
+        public static final int FontAwesomeText_fa_icon = 0;
         /** Attributes that can be used with a LinearLayoutCompat.
            <p>Includes the following attributes:</p>
            <table>

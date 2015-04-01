@@ -22,7 +22,7 @@
     <color name="background_floating_material_light">#ffeeeeee</color>
     <color name="background_material_dark">#ff303030</color>
     <color name="background_material_light">#ffeeeeee</color>
-    <!-- From: file:/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/exploded-aar/com.beardedhen/androidbootstrap/1.1.0/res/values/values.xml -->
+    <!-- From: file:/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/exploded-aar/com.beardedhen/androidbootstrap/1.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="bbutton_danger">#ffd9534f</color>
     <color name="bbutton_danger_disabled">#a5d9534f</color>
@@ -77,7 +77,7 @@
     <color name="bright_foreground_inverse_material_light">@color/bright_foreground_material_dark</color>
     <color name="bright_foreground_material_dark">@android:color/white</color>
     <color name="bright_foreground_material_light">@android:color/black</color>
-    <!-- From: file:/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/exploded-aar/com.beardedhen/androidbootstrap/1.1.0/res/values/values.xml -->
+    <!-- From: file:/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/exploded-aar/com.beardedhen/androidbootstrap/1.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="bthumbnail_background">#ffffffff</color>
     <color name="bthumbnail_border">#dbdbdb</color>
@@ -118,7 +118,7 @@
     <color name="secondary_text_disabled_material_light">#24000000</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <!-- From: file:/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/exploded-aar/com.beardedhen/androidbootstrap/1.1.0/res/values/values.xml -->
+    <!-- From: file:/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/exploded-aar/com.beardedhen/androidbootstrap/1.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="white">#ffffffff</color>
     <declare-styleable name="ActionBar"><attr name="navigationMode"><enum name="normal" value="0"/><enum name="listMode" value="1"/><enum name="tabMode" value="2"/></attr><attr name="displayOptions"><flag name="none" value="0"/><flag name="useLogo" value="0x1"/><flag name="showHome" value="0x2"/><flag name="homeAsUp" value="0x4"/><flag name="showTitle" value="0x8"/><flag name="showCustom" value="0x10"/><flag name="disableHome" value="0x20"/></attr><attr name="title"/><attr format="string" name="subtitle"/><attr format="reference" name="titleTextStyle"/><attr format="reference" name="subtitleTextStyle"/><attr format="reference" name="icon"/><attr format="reference" name="logo"/><attr format="reference" name="divider"/><attr format="reference" name="background"/><attr format="reference|color" name="backgroundStacked"/><attr format="reference|color" name="backgroundSplit"/><attr format="reference" name="customNavigationLayout"/><attr name="height"/><attr format="reference" name="homeLayout"/><attr format="reference" name="progressBarStyle"/><attr format="reference" name="indeterminateProgressStyle"/><attr format="dimension" name="progressBarPadding"/><attr name="homeAsUpIndicator"/><attr format="dimension" name="itemPadding"/><attr format="boolean" name="hideOnContentScroll"/><attr format="dimension" name="contentInsetStart"/><attr format="dimension" name="contentInsetEnd"/><attr format="dimension" name="contentInsetLeft"/><attr format="dimension" name="contentInsetRight"/><attr format="dimension" name="elevation"/><attr format="reference" name="popupTheme"/></declare-styleable>
@@ -133,7 +133,7 @@
     <declare-styleable name="BootstrapThumbnail"><attr format="boolean" name="bt_roundedCorners"/><attr format="integer" name="bt_image"/><attr format="dimension" name="bt_width"/><attr format="dimension" name="bt_height"/><attr format="dimension" name="bt_inside_padding"/><attr name="android:text"/></declare-styleable>
     <declare-styleable name="CompatTextView"><attr format="reference|boolean" name="textAllCaps"/></declare-styleable>
     <declare-styleable name="DrawerArrowToggle"><attr format="color" name="color"/><attr format="boolean" name="spinBars"/><attr format="dimension" name="drawableSize"/><attr format="dimension" name="gapBetweenBars"/><attr format="dimension" name="topBottomBarArrowSize"/><attr format="dimension" name="middleBarArrowSize"/><attr format="dimension" name="barSize"/><attr format="dimension" name="thickness"/></declare-styleable>
-    <declare-styleable name="FontAwesomeText"><attr format="string" name="fa_icon"/><attr name="android:textSize"/><attr name="android:textColor"/></declare-styleable>
+    <declare-styleable name="FontAwesomeText"><attr format="string" name="fa_icon"/></declare-styleable>
     <declare-styleable name="LinearLayoutCompat"><attr name="android:orientation"/><attr name="android:gravity"/><attr name="android:baselineAligned"/><attr name="android:baselineAlignedChildIndex"/><attr name="android:weightSum"/><attr format="boolean" name="measureWithLargestChild"/><attr name="divider"/><attr name="showDividers"><flag name="none" value="0"/><flag name="beginning" value="1"/><flag name="middle" value="2"/><flag name="end" value="4"/></attr><attr format="dimension" name="dividerPadding"/></declare-styleable>
     <declare-styleable name="LinearLayoutCompat_Layout"><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_weight"/><attr name="android:layout_gravity"/></declare-styleable>
     <declare-styleable name="ListPopupWindow"><attr name="android:dropDownVerticalOffset"/><attr name="android:dropDownHorizontalOffset"/></declare-styleable>
@@ -192,14 +192,14 @@
     <eat-comment/>
     <dimen name="activity_horizontal_margin">10dp</dimen>
     <dimen name="activity_vertical_margin">10dp</dimen>
-    <!-- From: file:/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/exploded-aar/com.beardedhen/androidbootstrap/1.1.0/res/values/values.xml -->
+    <!-- From: file:/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/exploded-aar/com.beardedhen/androidbootstrap/1.2.1/res/values/values.xml -->
     <eat-comment/>
     <dimen name="bbuton_rounded_corner_radius">5dp</dimen>
     <!-- From: file:/Users/annygakhokidze/AndroidStudioProjects/Canski/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="bottom_buttons_margin">0dp</dimen>
     <dimen name="bottom_buttons_padding">5dp</dimen>
-    <!-- From: file:/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/exploded-aar/com.beardedhen/androidbootstrap/1.1.0/res/values/values.xml -->
+    <!-- From: file:/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/exploded-aar/com.beardedhen/androidbootstrap/1.2.1/res/values/values.xml -->
     <eat-comment/>
     <dimen name="bthumbnail_rounded_corner_radius">3dp</dimen>
     <!-- From: file:/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
@@ -215,7 +215,7 @@
     <dimen name="margin">17dp</dimen>
     <dimen name="margin_bottom_buttons">18dp</dimen>
     <dimen name="padding">15dp</dimen>
-    <!-- From: file:/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/exploded-aar/com.beardedhen/androidbootstrap/1.1.0/res/values/values.xml -->
+    <!-- From: file:/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/exploded-aar/com.beardedhen/androidbootstrap/1.2.1/res/values/values.xml -->
     <eat-comment/>
     <dimen name="padding_large">16dp</dimen>
     <dimen name="padding_medium">12dp</dimen>
@@ -264,7 +264,7 @@
     <string name="blackcomb_name">Blackcomb</string>
     <string name="cypress_name">Cypress</string>
     <string name="grouse_name">Grouse</string>
-    <!-- From: file:/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/exploded-aar/com.beardedhen/androidbootstrap/1.1.0/res/values/values.xml -->
+    <!-- From: file:/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/exploded-aar/com.beardedhen/androidbootstrap/1.2.1/res/values/values.xml -->
     <eat-comment/>
     <string name="hello_world">Hello world!</string>
     <!-- From: file:/Users/annygakhokidze/AndroidStudioProjects/Canski/app/src/main/res/values/strings.xml -->
@@ -276,7 +276,7 @@
     <string name="status"> </string>
     <string name="title">Vancouver Mountains</string>
     <string name="whistler_name">Whistler</string>
-    <!-- From: file:/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/exploded-aar/com.beardedhen/androidbootstrap/1.1.0/res/values/values.xml -->
+    <!-- From: file:/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/exploded-aar/com.beardedhen/androidbootstrap/1.2.1/res/values/values.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--

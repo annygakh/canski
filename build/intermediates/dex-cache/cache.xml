@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/pre-dexed/debug/classes-6f9aa75019054c565f9b837b53e1606957cffd15.jar" />
+    </item>
+    <item
+        jar="/Users/annygakhokidze/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.2.2/d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b/jackson-core-2.2.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b">
+        <dex dex="/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/pre-dexed/debug/jackson-core-2.2.2-b8d826d9d0739acb8fceb6473a888d075aff0430.jar" />
+    </item>
+    <item
+        jar="/Users/annygakhokidze/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.2.2/3c8f6018eaa72d43b261181e801e6f8676c16ef6/jackson-databind-2.2.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3c8f6018eaa72d43b261181e801e6f8676c16ef6">
+        <dex dex="/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/pre-dexed/debug/jackson-databind-2.2.2-c55c2b2e38fba408c99c0318f9990fa7a085442b.jar" />
+    </item>
+    <item
+        jar="/Users/annygakhokidze/.gradle/caches/modules-2/files-2.1/com.firebase/firebase-client-android/2.2.0/3dfbd3df303f65feb6b6ed808df9e6b75b267f4f/firebase-client-android-2.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3dfbd3df303f65feb6b6ed808df9e6b75b267f4f">
+        <dex dex="/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/pre-dexed/debug/firebase-client-android-2.2.0-ebffc6eb86b9bd398f5674addd17af7385add4f9.jar" />
+    </item>
+    <item
+        jar="/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/pre-dexed/debug/classes-9dbf71b92ba0dd354ea50f2eb312996d2f5524a3.jar" />
+    </item>
+    <item
+        jar="/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/exploded-aar/com.beardedhen/androidbootstrap/1.2.1/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="5b26560d38c480aa5c8413a9f43bd205afb123d7">
+        <dex dex="/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/pre-dexed/debug/classes-dc0cb82b3974901b6ab8c772d09248300aa4da33.jar" />
+    </item>
+    <item
+        jar="/Users/annygakhokidze/Documents/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-20b3c107e7de9ebff1b0b36f76ecabdb806acb0b.jar" />
+    </item>
+    <item
+        jar="/Users/annygakhokidze/.gradle/caches/modules-2/files-2.1/com.firebase/tubesock/0.0.11/d37cb67277928cf59344b4196af8d9cee1f1a27c/tubesock-0.0.11.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d37cb67277928cf59344b4196af8d9cee1f1a27c">
+        <dex dex="/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/pre-dexed/debug/tubesock-0.0.11-2594b796406b21ba2e2743be686ede3a1f600ae2.jar" />
+    </item>
+    <item
+        jar="/Users/annygakhokidze/.gradle/caches/modules-2/files-2.1/com.firebase/firebase-client-jvm/2.2.0/98ee8e40df7889d5913885424ad608174b537d86/firebase-client-jvm-2.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="98ee8e40df7889d5913885424ad608174b537d86">
+        <dex dex="/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/pre-dexed/debug/firebase-client-jvm-2.2.0-ac13be32b56383de03bd0b4d6e8d643649a2c530.jar" />
+    </item>
+    <item
+        jar="/Users/annygakhokidze/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.2.2/285cb9c666f0f0f3dd8a1be04e1f457eb7b15113/jackson-annotations-2.2.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="285cb9c666f0f0f3dd8a1be04e1f457eb7b15113">
+        <dex dex="/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/pre-dexed/debug/jackson-annotations-2.2.2-6073a70a4f289cd8a9f45236cbbd98d299f399f3.jar" />
+    </item>
+    <item
+        jar="/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/annygakhokidze/AndroidStudioProjects/Canski/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-eef6088c1be53bc8a886aad4b97a0b98dd51e321.jar" />
+    </item>
+
+</items>
