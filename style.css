@@ -8,6 +8,7 @@
 
 
 /* ---- css rules ------*/
+/* ---- general------*/
 html, body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: large;
@@ -15,6 +16,22 @@ html, body {
 body {
 
 }
+
+/* ---- css rules ------*/
+main {
+	text-align: center;
+}
+
+.description h1 {
+	display: block;
+	font-weight: 200;
+}
+.description h6{
+	font-weight: 100;
+}
+
+
+/* ---- css rules ------*/
 table.table-center {
 	margin-left: auto;
 	margin-right: auto;
@@ -32,7 +49,7 @@ table, td, tr {
 	padding: 30px;
 }
 
-#table {
+#table, main{
 	opacity: 0;
 	-webkit-animation: 	fadeIn 1s ease-in 1 normal forwards;
 	-moz-animation: 	fadeIn 1s ease-in 1 normal forwards;
