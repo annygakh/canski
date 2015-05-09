@@ -46,12 +46,12 @@ request(url_wb, function(err, resp, body){
 		if (runs_open_w > 0) 
 			whistler_ref.set(runs_open_w);
 		else
-			whistler_ref.set(-1);
+			whistler_ref.set(0);
 		
 		if (runs_open_b > 0) 
 			blackcomb_ref.set(runs_open_b);
 		else
-			blackcomb_ref.set(-1);
+			blackcomb_ref.set(0);
 
 	}
 	num_finished++;
@@ -83,10 +83,12 @@ request(url_grouse, function(err, resp, body){
 		if ((warn.indexOf("stand") > -1) || (warn.indexOf("STAND")) > -1 || (warn.indexOf("Stand")) > -1 ){
 			grouse_ref.set("0");
 			console.log("grouse is on standby");
-		} else if (warn.indexOf('open') > -1 || warn.indexOf('OPEN') > -1){
+		} else if ((warn.indexOf('open') > -1 || warn.indexOf('OPEN') > -1) && warn.indexOf('Grind') == -1){
 			grouse_ref.set('OPEN');
 			console.log("grouse is open, latest warnings: " + warn);
-			
+		} else {
+			grouse_ref.set("0");
+			console.log("grouse is on standby");
 		}
 	}
 	num_finished++;
